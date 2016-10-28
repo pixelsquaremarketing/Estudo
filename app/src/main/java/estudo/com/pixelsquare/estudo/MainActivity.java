@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void next(View view){
         Intent intent = new Intent(this, SegundaActivity.class);
+
+        String msg = "Mensagem Vinda da Primeira Activity";
+
+        intent.putExtra("msg", msg);
+
         startActivity(intent);
     }
 }
